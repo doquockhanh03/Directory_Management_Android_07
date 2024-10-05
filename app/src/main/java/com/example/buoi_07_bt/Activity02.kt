@@ -39,7 +39,7 @@ class Activity02 : AppCompatActivity() {
             document?.content = edtContent?.text?.toString() ?: ""
 
             val intent : Intent = Intent()
-            intent.putExtra("document", document)
+            intent.putExtra("Document", document)
             intent.putExtra(MainActivity.KEY, MainActivity.TYPE_EDIT)
             setResult(Activity.RESULT_OK, intent)
             finish()

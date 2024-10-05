@@ -72,10 +72,10 @@ class MainActivity : AppCompatActivity() {
         val dividerItemDecoration = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
         rcvDocument?.addItemDecoration(dividerItemDecoration)
         arrayList.add(Document(1, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
-        arrayList.add(Document(1, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
-        arrayList.add(Document(1, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
-        arrayList.add(Document(1, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
-        arrayList.add(Document(1, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
+        arrayList.add(Document(2, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
+        arrayList.add(Document(3, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
+        arrayList.add(Document(4, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
+        arrayList.add(Document(5, "Căng thẳng Nga va Ucraina", "tổng hợp tin tức thời sự nóng hổi nhất của tất cả các miền"))
         recyclerViewAdapter = RecyclerAdapter(this, arrayList)
         rcvDocument?.adapter = recyclerViewAdapter
 

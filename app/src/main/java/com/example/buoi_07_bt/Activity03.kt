@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Activity03 : AppCompatActivity() {
-    private var tvSave: TextView? = null
+    private var tvSave1: TextView? = null
     private var tvHuy: TextView? = null
     private var edtTitle: EditText? = null
     private var edtContent: EditText? = null
@@ -20,12 +20,12 @@ class Activity03 : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_03)
 
-        tvSave = findViewById(R.id.tvLuu)
+        tvSave1 = findViewById(R.id.tvLuu)
         tvHuy = findViewById(R.id.tvHuy)
         edtTitle = findViewById(R.id.edtTitle)
         edtContent = findViewById(R.id.edtContent)
 
-        tvSave?.setOnClickListener{
+        tvSave1?.setOnClickListener{
             val document = Document(
                 id = System.currentTimeMillis().toInt(),
                 title = edtTitle?.text.toString(),
@@ -33,7 +33,7 @@ class Activity03 : AppCompatActivity() {
             )
 
             val intent : Intent = Intent()
-            intent.putExtra("document", document)
+            intent.putExtra("Document", document)
             intent.putExtra(MainActivity.KEY, MainActivity.TYPE_ADD)
             setResult(RESULT_OK, intent)
             finish()
